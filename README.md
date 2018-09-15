@@ -45,7 +45,7 @@ The `C` code above is translated to:
 ```assembly
 LOADI r1, 0
 LOADI r3, 1
-LOADI r2, 30000
+LOADI r2, 100
 MOV r4, r2
 ADD r1, r4
 SUB r4, r3
