@@ -27,3 +27,31 @@ cc -O3 main.c context.c -o emu
 - WRITE rx // printf(“%d\n”, rx)
 - READ rx // scanf(“%d”, rx)
 - EXIT // exit(0)
+
+## Example
+
+```c
+int x = 0;
+for (int i = 100; i > 0; i--) {
+  for (int k = i; k > 0; k--) {
+    x += k;
+  }
+}
+printf("%d\n", x);
+```
+
+The `C` code above is translated to:
+
+```assembly
+LOADI r1, 0
+LOADI r3, 1
+LOADI r2, 30000
+MOV r4, r2
+ADD r1, r4
+SUB r4, r3
+BRNZ r4, -2
+SUB r2, r3
+BRNZ r2, -5
+WRITE r1
+EXIT
+```
