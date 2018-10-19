@@ -266,9 +266,8 @@ int main(int argc, char **argv) {
     ;
 
   if (argc == 3)
-    if (strcmp(argv[2], "--dump") == 0) {
+    if (strcmp(argv[2], "--dump") == 0)
       Dump();
-    }
 
   return 0;
 }
