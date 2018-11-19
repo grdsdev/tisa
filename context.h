@@ -13,3 +13,5 @@ struct instruction {
 } extern instructions[1024];
 
 extern unsigned long ticks;
+
+void dump(void);
