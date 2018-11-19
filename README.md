@@ -1,5 +1,5 @@
-# toy-emulator
-Tiny emulator for a toy ISA
+# TISA
+TISA stands for Tiny ISA.
 
 ## Bulding and executing
 
