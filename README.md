@@ -3,10 +3,16 @@ Tiny emulator for a toy ISA
 
 ## Bulding and executing
 
+For building the project we're using cmake.
 ```
-cc -O3 main.c context.c -o emu
-./emu input.s --dump
+mkdir build
+cd build
+cmake ..
+make
 ```
+
+Then run with:
+`./emu ../input.s --dump`
 
 
 ## Supported instructions
