@@ -12,7 +12,7 @@ make
 ```
 
 Then run with:
-`./emu ../input.s --dump`
+`./tisa ../input.s --dump`
 
 
 ## Supported instructions
