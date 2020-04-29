@@ -1,7 +1,9 @@
 #include "fetch.h"
-#include "decode.h"
+
 #include <assert.h>
 #include <stdio.h>
+
+#include "decode.h"
 
 void load(const char *str) {
   FILE *f = fopen(str, "r");

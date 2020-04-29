@@ -1,4 +1,5 @@
 #include "context.h"
+
 #include <stdio.h>
 
 struct registers registers;
@@ -11,8 +12,7 @@ void dump(void) {
   printf("REGS: [");
   for (int i = 0; i < 10; i++) {
     printf("%ld", registers.r[i]);
-    if (i != 9)
-      printf(", ");
+    if (i != 9) printf(", ");
   }
 
   printf("]\n");

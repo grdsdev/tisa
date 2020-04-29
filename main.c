@@ -1,7 +1,8 @@
+#include <string.h>
+
 #include "context.h"
 #include "execute.h"
 #include "fetch.h"
-#include <string.h>
 
 int main(int argc, char **argv) {
   load(argv[1]);
@@ -10,8 +11,7 @@ int main(int argc, char **argv) {
     ;
 
   if (argc == 3)
-    if (strcmp(argv[2], "--dump") == 0)
-      dump();
+    if (strcmp(argv[2], "--dump") == 0) dump();
 
   return 0;
 }
